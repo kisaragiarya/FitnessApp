@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <Button
+        android:id="@+id/latihanTangan"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="41dp"
+        android:text="@string/latihanTangan"
+        app:layout_constraintBottom_toTopOf="@+id/latihanKaki"
+        app:layout_constraintEnd_toEndOf="@+id/latihanKaki"
+        app:layout_constraintStart_toStartOf="@+id/latihanKaki"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/latihanSeluruh"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/latihanSeluruh"
+        app:layout_constraintBottom_toTopOf="@+id/latihanBawah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/latihanKaki" />
+
+    <Button
+        android:id="@+id/latihanBawah"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="49dp"
+        android:text="@string/LatihanBawah"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/latihanSeluruh"
+        app:layout_constraintStart_toStartOf="@+id/latihanSeluruh"
+        app:layout_constraintTop_toBottomOf="@+id/latihanSeluruh" />
+
+    <Button
+        android:id="@+id/latihanKaki"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="56dp"
+        android:text="@string/latihanKaki"
+        app:layout_constraintBottom_toTopOf="@+id/latihanSeluruh"
+        app:layout_constraintEnd_toEndOf="@+id/latihanSeluruh"
+        app:layout_constraintStart_toStartOf="@+id/latihanSeluruh"
+        app:layout_constraintTop_toBottomOf="@+id/latihanTangan" />
+
+    <Button
+        android:id="@+id/alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="17dp"
+        android:text="Set Alarm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="60dp"
+        android:text="Logout"
+        app:layout_constraintEnd_toStartOf="@+id/alarm"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="42dp"
+        android:text="@string/List"
+        app:layout_constraintBottom_toTopOf="@+id/latihanTangan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
